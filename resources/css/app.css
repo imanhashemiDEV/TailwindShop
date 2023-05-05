@@ -1,0 +1,13 @@
+@tailwind base;
+@layer base {
+    @font-face {
+        font-family: "Dana";
+        src: local("Dana") , url('../fonts/Dana/woff2/DanaFaNum-Regular.woff2') format('woff2');
+    }
+
+}
+@tailwind components;
+@tailwind utilities;
+[x-cloak] {
+    display: none !important;
+}
