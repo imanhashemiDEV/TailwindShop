@@ -6,6 +6,12 @@
     }
 
 }
+
+body{
+    background-image: url("../images/headerBgDesktop.png");
+    background-repeat: no-repeat;
+}
+
 @tailwind components;
 @tailwind utilities;
 [x-cloak] {

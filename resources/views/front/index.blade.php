@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TailwindShop</title>
     <!-- Fonts -->
-    <link rel="shortcut icon" href="../images/fav-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/fav-icon.png" type="image/x-icon">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet"/>
     @vite('resources/css/app.css')
 </head>
@@ -30,24 +30,33 @@
     </symbol>
 </svg>
 
-<header class="bg-black/50 container h-24 rounded-3xl fixed top-9 right-0 left-0">
+<header class="bg-black/50 container h-24 rounded-3xl fixed top-9 right-0 left-0 backdrop-blur">
    <div class="relative flex items-center justify-between w-full px-10 py-5 ">
        {{--Logo and Menu--}}
-       <nav class="flex items-center gap-x-9">
+       <nav class="flex items-center gap-x-9 h-14">
            <div>
                <img src="../../images/app-logo.png" alt="Golden coffee">
            </div>
-           <ul class="flex gap-x-9 text-xl text-gray-300">
+           <ul class="flex gap-x-9 text-xl text-gray-300 tracking-tightest h-full child:leading-[56px]">
                <li class="text-orange-200">
                    <a href="#">صفحه اصلی</a>
                </li>
-               <li class="">
-                   <a href="#">فروشگاه</a>
-                   <ul class="absolute bg-gray-500 flex-col items-center justify-center gap-4 text-md w-24">
-                       <li><a href="#">محصول 1</a></li>
+               <li class="relative group">
+                   <a href="#" class="group-hover:text-orange-300 transition-all">فروشگاه</a>
+                   <ul class="absolute opacity-0 invisible  group-hover:opacity-100 group-hover:visible top-full text-zinc-700 dark:text-white text-base child:block  bg-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300 flex-col items-center justify-center overflow-hidden tracking-normal shadow-normal text-md w-52 child:p-4 child:transition-colors child-hover:text-orange-300 transition-all child-hover:bg-orange-50 ">
+                       <li class=""><a href="#">محصول 1</a></li>
                        <li><a href="#">محصول 2</a></li>
                        <li><a href="#">محصول 3</a></li>
                    </ul>
+               </li>
+               <li class="text">
+                   <a href="#">بلاگ</a>
+               </li>
+               <li class="text">
+                   <a href="#">تماس با ما</a>
+               </li>
+               <li class="text">
+                   <a href="#">درباره ما</a>
                </li>
            </ul>
        </nav>
@@ -66,7 +75,7 @@
              </div>
          </div>
            <span class="w-px h-14 block bg-white/20"></span>
-           <a href="#" class="flex items-center gap-4">
+           <a href="#" class="flex items-center gap-4 tracking-tightest">
                <svg class="h-8 w-8">
                    <use xlink:href="#arrow-right-to-rectangle"></use>
                </svg>

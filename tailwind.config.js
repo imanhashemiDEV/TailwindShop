@@ -19,9 +19,24 @@ module.exports = {
             colors: {},
             fontFamily: {
                 "Dana": "Dana",
+            },
+            boxShadow:{
+                "normal ":"0px 1px 10px rgba(0,0,0,0.05)"
+            },
+            borderRadius:{
+                "4xl":"2rem"
+            },
+            letterSpacing:{
+                "tightest":"-0.065em"
             }
         },
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [
+        require('@tailwindcss/forms'),
+        function ({ addVariant }) {
+            addVariant('child', '& > *');
+            addVariant('child-hover', '& > *:hover');
+        }
+    ],
 };
