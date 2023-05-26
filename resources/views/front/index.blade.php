@@ -8,6 +8,13 @@
     <link rel="shortcut icon" href="../../images/fav-icon.png" type="image/x-icon">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet"/>
     @vite('resources/css/app.css')
+    <script type="text/javascript">
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 </head>
 <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
 
@@ -28,6 +35,10 @@
     <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
     </symbol>
+    <symbol id="chevron-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+    </symbol>
+
 </svg>
 
 <header class="bg-black/50 container h-24 rounded-3xl fixed top-9 right-0 left-0 backdrop-blur">
@@ -63,21 +74,37 @@
 
        <div class="flex gap-x-10 text-orange-200 text-xl">
          <div class="flex items-center gap-4">
-             <div>
-                 <svg class="h-8 w-8">
-                     <use xlink:href="#shopping-cart"></use>
-                 </svg>
+             <div class="relative group cursor-pointer">
+                <div class="py-3">
+                    <svg class="h-8 w-8">
+                        <use href="#shopping-cart"></use>
+                    </svg>
+                    <div class="absolute opacity-0 invisible left-0 p-5 group-hover:opacity-100 group-hover:visible top-full text-zinc-700 dark:text-white text-base  bg-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300  overflow-hidden tracking-normal shadow-normal text-md w-[400px] transition-all">
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="text-gray-300 "> 1 مورد</span>
+                            <div class="flex items-center">
+                                <a href="#" class="text-orange-200"> مشاهده سبد خرید</a>
+                                <svg class="w-4 h-4 text-orange-200">
+                                    <use href="#chevron-left"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
              </div>
-             <div>
-                 <svg class="h-8 w-8">
-                     <use xlink:href="#sun"></use>
+             <div class="cursor-pointer" id="toggle-theme">
+                 <svg class="h-8 w-8 inline-block dark:hidden ">
+                     <use href="#moon"></use>
+                 </svg>
+                 <svg class="h-8 w-8 hidden dark:inline-block ">
+                     <use href="#sun"></use>
                  </svg>
              </div>
          </div>
            <span class="w-px h-14 block bg-white/20"></span>
            <a href="#" class="flex items-center gap-4 tracking-tightest">
                <svg class="h-8 w-8">
-                   <use xlink:href="#arrow-right-to-rectangle"></use>
+                   <use href="#arrow-right-to-rectangle"></use>
                </svg>
                ثبت نام | ورود
            </a>
