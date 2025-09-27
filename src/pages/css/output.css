@@ -7,12 +7,13 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-rose-500: oklch(64.5% 0.246 16.439);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-vazir: "vazir";
   }
 }
 @layer base {
@@ -177,6 +178,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .font-vazir {
+    font-family: var(--font-vazir);
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -185,8 +189,8 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  .text-rose-500 {
-    color: var(--color-rose-500);
+  .text-blue-500 {
+    color: var(--color-blue-500);
   }
   .underline {
     text-decoration-line: underline;
@@ -195,6 +199,69 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-RD-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-RD-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-RD-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-RD-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-RD-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-RD-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-RD-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-RD-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/Vazirmatn-RD-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 @property --tw-border-style {
   syntax: "*";
