@@ -73,5 +73,27 @@
 }
 
 @theme{
-    --font-vazir:"vazir"
+    --font-vazir:"vazir";
+
+    
+    --color-primary-color:#ed1944;
 }
+
+@utility container{
+    padding-inline:12px;
+    margin-inline:auto;
+    @variant sm{
+        padding-inline:20px;
+    }
+    @variant md{
+        padding-inline:32px;
+    }
+    @variant lg{
+        padding-inline:80px;
+    }
+    @variant xl{
+        padding-inline:120px;
+    }
+}
+
+
