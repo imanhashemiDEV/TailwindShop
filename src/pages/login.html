@@ -8,25 +8,28 @@
 </head>
 <body class="font-vazir bg-white w-full h-screen flex items-center justify-center" >
              
-          <div class=" border border-gray-300 p-7 flex items-center justify-center rounded-lg ">
-                <div>
-                    <img src="images/logo.svg" alt="">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                        </svg>
-                    </div>
-                    <div>
-                        <h3>ورود | ثبت‌نام</h3>
-                        <p>سلام!</p>
-                        <p>لطفا شماره موبایل یا ایمیل خود را وارد کنید</p>
-                        <input type="text">
-                        <p>لطفا این قسمت را خالی نگذارید</p>
+          <div class=" border border-gray-300 p-7 flex flex-col items-center justify-center rounded-lg">
 
-                        <button>ورود</button>
-                        <p>ورود شما به معنای پذیرش شرایط دیجی‌کالاوقوانین حریم‌خصوصی است</p>
+                    <div class="flex justify-center relative w-full mb-8">
+                        <div class="absolute right-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                        </div>
+                        <img src="images/logo.svg" alt="">
                     </div>
-                </div>  
+
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">ورود | ثبت‌نام</h3>
+                        <p class="text-sm text-gray-600 my-2">سلام!</p>
+                        <p class="text-sm text-gray-600 my-2">لطفا شماره موبایل یا ایمیل خود را وارد کنید</p>
+                        <input class="w-full border border-primary-color p-2 mt-4 outline-none rounded-md" type="text">
+                        <p class="text-sm text-primary-color mt-2">لطفا این قسمت را خالی نگذارید</p>
+
+                        <button class="w-full bg-primary-color p-4 rounded-lg mt-8 mb-4 text-white">ورود</button>
+                        <p class="text-xs text-gray-600 my-2">ورود شما به معنای پذیرش <span class="text-blue-400"> شرایط دیجی‌کالا </span> و <span class="text-blue-400"> قوانین حریم‌خصوصی </span> است</p>
+                    </div>
+                 
           </div>
 </body>
 </html>
