@@ -10,6 +10,7 @@
     --color-orange-100: oklch(95.4% 0.038 75.164);
     --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-blue-400: oklch(70.7% 0.165 254.624);
+    --color-rose-400: oklch(71.2% 0.194 13.428);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
@@ -193,50 +194,23 @@
   .relative {
     position: relative;
   }
+  .top-9 {
+    top: calc(var(--spacing) * 9);
+  }
+  .top-10 {
+    top: calc(var(--spacing) * 10);
+  }
+  .-right-28 {
+    right: calc(var(--spacing) * -28);
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
-  }
-  .-bottom-0 {
-    bottom: calc(var(--spacing) * -0);
-  }
-  .-bottom-2 {
-    bottom: calc(var(--spacing) * -2);
-  }
-  .-bottom-3 {
-    bottom: calc(var(--spacing) * -3);
-  }
-  .-bottom-4 {
-    bottom: calc(var(--spacing) * -4);
-  }
-  .-bottom-6 {
-    bottom: calc(var(--spacing) * -6);
-  }
-  .-bottom-9 {
-    bottom: calc(var(--spacing) * -9);
   }
   .-bottom-12 {
     bottom: calc(var(--spacing) * -12);
   }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
-  }
-  .-left-4 {
-    left: calc(var(--spacing) * -4);
-  }
-  .-left-8 {
-    left: calc(var(--spacing) * -8);
-  }
-  .-left-10 {
-    left: calc(var(--spacing) * -10);
-  }
   .-left-12 {
     left: calc(var(--spacing) * -12);
-  }
-  .left-0 {
-    left: calc(var(--spacing) * 0);
-  }
-  .left-4 {
-    left: calc(var(--spacing) * 4);
   }
   .my-2 {
     margin-block: calc(var(--spacing) * 2);
@@ -280,9 +254,6 @@
     width: calc(var(--spacing) * 7);
     height: calc(var(--spacing) * 7);
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
@@ -292,11 +263,17 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
-  .h-\[2px\] {
-    height: 2px;
+  .h-\[400px\] {
+    height: 400px;
+  }
+  .h-\[500px\] {
+    height: 500px;
   }
   .h-auto {
     height: auto;
+  }
+  .h-full {
+    height: 100%;
   }
   .h-screen {
     height: 100vh;
@@ -310,11 +287,20 @@
   .w-\[1px\] {
     width: 1px;
   }
+  .w-\[200px\] {
+    width: 200px;
+  }
+  .w-\[600px\] {
+    width: 600px;
+  }
   .w-auto {
     width: auto;
   }
   .w-full {
     width: 100%;
+  }
+  .w-screen {
+    width: 100vw;
   }
   .flex-grow {
     flex-grow: 1;
@@ -341,6 +327,15 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
   .items-center {
     align-items: center;
   }
@@ -358,6 +353,12 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-y-scroll {
+    overflow-y: scroll;
   }
   .rounded-4xl {
     border-radius: var(--radius-4xl);
@@ -387,6 +388,9 @@
   .bg-gray-300 {
     background-color: var(--color-gray-300);
   }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
+  }
   .bg-gray-800 {
     background-color: var(--color-gray-800);
   }
@@ -395,6 +399,9 @@
   }
   .bg-primary-color {
     background-color: var(--color-primary-color);
+  }
+  .bg-rose-400 {
+    background-color: var(--color-rose-400);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -422,9 +429,6 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
-  }
-  .py-5 {
-    padding-block: calc(var(--spacing) * 5);
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -481,6 +485,9 @@
   .underline {
     text-decoration-line: underline;
   }
+  .opacity-20 {
+    opacity: 20%;
+  }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -509,34 +516,10 @@
       position: absolute;
     }
   }
-  .after\:-bottom-0 {
-    &::after {
-      content: var(--tw-content);
-      bottom: calc(var(--spacing) * -0);
-    }
-  }
-  .after\:-bottom-1 {
-    &::after {
-      content: var(--tw-content);
-      bottom: calc(var(--spacing) * -1);
-    }
-  }
-  .after\:-bottom-2 {
-    &::after {
-      content: var(--tw-content);
-      bottom: calc(var(--spacing) * -2);
-    }
-  }
   .after\:-bottom-3 {
     &::after {
       content: var(--tw-content);
       bottom: calc(var(--spacing) * -3);
-    }
-  }
-  .after\:bottom-0 {
-    &::after {
-      content: var(--tw-content);
-      bottom: calc(var(--spacing) * 0);
     }
   }
   .after\:h-\[2px\] {
@@ -549,12 +532,6 @@
     &::after {
       content: var(--tw-content);
       width: calc(var(--spacing) * 0);
-    }
-  }
-  .after\:w-full {
-    &::after {
-      content: var(--tw-content);
-      width: 100%;
     }
   }
   .after\:bg-primary-color {
@@ -578,27 +555,6 @@
       transition-duration: 150ms;
     }
   }
-  .after\:content-\[\'\'\] {
-    &::after {
-      --tw-content: '';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'i_am_iman\'\] {
-    &::after {
-      --tw-content: 'i am iman';
-      content: var(--tw-content);
-    }
-  }
-  .hover\:transition-all {
-    &:hover {
-      @media (hover: hover) {
-        transition-property: all;
-        transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-        transition-duration: var(--tw-duration, var(--default-transition-duration));
-      }
-    }
-  }
   .hover\:after\:w-full {
     &:hover {
       @media (hover: hover) {
@@ -617,28 +573,6 @@
           transition-property: all;
           transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
           transition-duration: var(--tw-duration, var(--default-transition-duration));
-        }
-      }
-    }
-  }
-  .hover\:after\:duration-1 {
-    &:hover {
-      @media (hover: hover) {
-        &::after {
-          content: var(--tw-content);
-          --tw-duration: 1ms;
-          transition-duration: 1ms;
-        }
-      }
-    }
-  }
-  .hover\:after\:duration-100 {
-    &:hover {
-      @media (hover: hover) {
-        &::after {
-          content: var(--tw-content);
-          --tw-duration: 100ms;
-          transition-duration: 100ms;
         }
       }
     }

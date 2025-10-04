@@ -80,6 +80,7 @@
     --color-border-color : border-gray-300;
 }
 
+
 @utility container{
     padding-inline:10px;
     margin-inline:auto;
@@ -88,9 +89,9 @@
     }
     @variant md{
         padding-inline:32px;
-    }
-   
-    
+    }  
 }
+
+
 
 
