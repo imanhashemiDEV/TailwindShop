@@ -59,8 +59,8 @@
                      </div>
                      <div class="overflow-hidden">
                         <div class="w-screen h-screen bg-gray-400 opacity-20 absolute top-10 -right-28 "></div>
-                        <div class="flex w-[600px] h-[400px] bg-white absolute top-9 right-0 overflow-y-scroll rounded-b-lg shadow">
-                             <div dir="ltr" class="w-[200px] h-full overflow-y-scroll bg-gray-100">
+                        <div class="flex h-[400px] bg-white absolute top-9 right-0 overflow-y-scroll rounded-b-lg shadow">
+                             <div dir="ltr" class="min-w-[200px] h-full overflow-y-scroll bg-gray-100">
                                   <ul dir="rtl">
                                     <li class="flex items-center hover:bg-white hover:text-primary-color p-4 gap-2">
                                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -112,31 +112,36 @@
                                     </li>
                                   </ul>
                              </div>
-                             <div dir="ltr" class="bg-white overflow-y-scroll p-4">
-                                      <div class="flex text-blue-500 gap-2">
-                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                             <div dir="ltr" class="bg-white overflow-y-scroll p-4 h-full">
+                                      <div dir="rtl" class="flex text-blue-500 gap-2">
+                                        <a class="text-sm" href="">همه محصولات</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
                                           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                                         </svg>
-                                        <a class="text-sm" href="">همه محصولات</a>
                                       </div>
-                                      <div class="py-4">
-                                        <div class="flex justify-end gap-2 mb-2 hover:text-primary-color">
-                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                                             </svg>
-                                             <a class="text-sm" href="">آیفون</a>
-                                        </div>
-                                        <ul class="flex flex-col items-end ">
-                                            <li>
-                                                <a class="text-sm hover:text-primary-color" href="">13 آیفون</a>
-                                            </li>
-                                            <li>
-                                                <a class="text-sm hover:text-primary-color" href="">14 آیفون</a>
-                                            </li>
-                                            <li>
-                                                <a class="text-sm hover:text-primary-color" href="">15 آیفون</a>
-                                            </li>
-                                        </ul>
+                                      <div dir="rtl" class="flex flex-wrap min-w-[400px] gap-4">
+
+                                         <div class="p-4">
+                                            <div class="flex justify-end gap-2 mb-2 px-2 text-black hover:text-primary-color border-r-2 border-primary-color">
+                                                <a class="text-sm font-semibold " href="">آیفون</a>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                                </svg>
+                                            </div>
+                                            <ul class="flex flex-col items-start leading-7">
+                                                <li>
+                                                    <a class="text-sm hover:text-primary-color" href="">13 آیفون</a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-sm hover:text-primary-color" href="">14 آیفون</a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-sm hover:text-primary-color" href="">15 آیفون</a>
+                                                </li>
+                                            </ul>
+                                         </div>
+                                         
+                                         
                                       </div>
                              </div>
                         </div>
