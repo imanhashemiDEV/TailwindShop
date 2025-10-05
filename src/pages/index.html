@@ -50,23 +50,94 @@
         <nav class="flex pt-4 pb-2 px-24">
             <div class="w-1/2 flex items-center px-4 gap-4">
                 
-                <div class=" text-gray-500 cursor-pointer relative">
-                     <div class="flex items-center gap-2 after:w-0 after:h-[2px] after:bg-primary-color after:absolute after:-bottom-3 hover:after:w-full hover:after:transition-all  hover:after:duration-150 after:transition-all after:duration-150">
+                <div  class="text-gray-500 cursor-pointer relative">
+                     <div id="main" class="flex items-center h-full gap-2 after:w-0 after:h-[2px] after:bg-primary-color after:absolute after:-bottom-3 hover:after:w-full hover:after:transition-all  hover:after:duration-150 after:transition-all after:duration-150">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                         </svg>
-                        <p class="text-md font-semibold"> دسته بندی کالا ها</p>
+                        <p class="text-md font-semibold "> دسته بندی کالا ها</p>
                      </div>
                      <div class="overflow-hidden">
                         <div class="w-screen h-screen bg-gray-400 opacity-20 absolute top-10 -right-28 "></div>
-                        <div class="w-[600px] h-[400px] bg-white absolute top-9 right-0 overflow-scroll">
+                        <div class="flex w-[600px] h-[400px] bg-white absolute top-9 right-0 overflow-y-scroll rounded-b-lg shadow">
                              <div dir="ltr" class="w-[200px] h-full overflow-y-scroll bg-gray-100">
                                   <ul dir="rtl">
-                                    <li><a href="#">موبایل</a></li>
+                                    <li class="flex items-center hover:bg-white hover:text-primary-color p-4 gap-2">
+                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
+                                        <a class="text-sm" href="#">موبایل</a>
+                                    </li>
+                                    <li class="flex items-center hover:bg-white hover:text-primary-color p-4 gap-2">
+                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
+                                        <a class="text-sm" href="#">موبایل</a>
+                                    </li>
+                                    <li class="flex items-center hover:bg-white hover:text-primary-color p-4 gap-2">
+                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
+                                        <a class="text-sm" href="#">موبایل</a>
+                                    </li>
+                                    <li class="flex items-center hover:bg-white hover:text-primary-color p-4 gap-2">
+                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
+                                        <a class="text-sm" href="#">موبایل</a>
+                                    </li>
+                                    <li class="flex items-center hover:bg-white hover:text-primary-color p-4 gap-2">
+                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
+                                        <a class="text-sm" href="#">موبایل</a>
+                                    </li>
+                                    <li class="flex items-center hover:bg-white hover:text-primary-color p-4 gap-2">
+                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
+                                        <a class="text-sm" href="#">موبایل</a>
+                                    </li>
+                                    <li class="flex items-center hover:bg-white hover:text-primary-color p-4 gap-2">
+                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
+                                        <a class="text-sm" href="#">موبایل</a>
+                                    </li>
+                                    <li class="flex items-center hover:bg-white hover:text-primary-color p-4 gap-2">
+                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
+                                        <a class="text-sm" href="#">موبایل</a>
+                                    </li>
                                   </ul>
                              </div>
-                             <div class="w-[400px] h-full overflow-y-scroll">
-
+                             <div dir="ltr" class="bg-white overflow-y-scroll p-4">
+                                      <div class="flex text-blue-500 gap-2">
+                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                        </svg>
+                                        <a class="text-sm" href="">همه محصولات</a>
+                                      </div>
+                                      <div class="py-4">
+                                        <div class="flex justify-end gap-2 mb-2 hover:text-primary-color">
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                             </svg>
+                                             <a class="text-sm" href="">آیفون</a>
+                                        </div>
+                                        <ul class="flex flex-col items-end ">
+                                            <li>
+                                                <a class="text-sm hover:text-primary-color" href="">13 آیفون</a>
+                                            </li>
+                                            <li>
+                                                <a class="text-sm hover:text-primary-color" href="">14 آیفون</a>
+                                            </li>
+                                            <li>
+                                                <a class="text-sm hover:text-primary-color" href="">15 آیفون</a>
+                                            </li>
+                                        </ul>
+                                      </div>
                              </div>
                         </div>
                      </div>
@@ -130,6 +201,9 @@
             </div>
         </nav>
 
-     </header>        
+     </header> 
+     
+     
+     <script src="scripts/scripts.js"></script>
 </body>
 </html>
