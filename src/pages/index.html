@@ -50,16 +50,16 @@
         <nav class="flex pt-4 pb-2 px-24">
             <div class="w-1/2 flex items-center px-4 gap-4">
                 
-                <div  class="text-gray-500 cursor-pointer relative">
-                     <div id="main" class="flex items-center h-full gap-2 after:w-0 after:h-[2px] after:bg-primary-color after:absolute after:-bottom-3 hover:after:w-full hover:after:transition-all  hover:after:duration-150 after:transition-all after:duration-150">
+                <div id="categories"  class="text-gray-500 cursor-pointer h-full relative">
+                     <div id="main" class="flex items-center h-full gap-2 after:w-0 after:h-[2px] after:bg-primary-color after:absolute after:-bottom-1 hover:after:w-full hover:after:transition-all  hover:after:duration-150 after:transition-all after:duration-150">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                         </svg>
                         <p class="text-md font-semibold "> دسته بندی کالا ها</p>
                      </div>
-                     <div class="overflow-hidden">
-                        <div class="w-screen h-screen bg-gray-400 opacity-20 absolute top-10 -right-28 "></div>
-                        <div class="flex h-[400px] bg-white absolute top-9 right-0 overflow-y-scroll rounded-b-lg shadow">
+                     <div id="categories_list" class="overflow-hidden hidden">
+                        <div id="dark_menu_background" class="w-screen h-screen bg-gray-400 opacity-20 absolute top-10 -right-28 "></div>
+                        <div class="flex h-[400px] bg-white absolute top-10 right-0 overflow-y-scroll rounded-b-lg shadow">
                              <div dir="ltr" class="min-w-[200px] h-full overflow-y-scroll bg-gray-100">
                                   <ul dir="rtl">
                                     <li class="flex items-center hover:bg-white hover:text-primary-color p-4 gap-2">
