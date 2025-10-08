@@ -47,7 +47,165 @@
         </div>
 
 
-        
+        <nav class="flex pt-4 pb-2 px-24">
+            <div class="w-1/2 flex items-center px-4 gap-4">
+                
+                <div id="categories"  class="text-gray-500 cursor-pointer h-full relative">
+                     <div id="main" class="flex items-center h-full gap-2 after:w-0 after:h-[2px] after:bg-primary-color after:absolute after:-bottom-1 hover:after:w-full hover:after:transition-all  hover:after:duration-150 after:transition-all after:duration-150">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                        <p class="text-md font-semibold "> دسته بندی کالا ها</p>
+                     </div>
+                     <div id="categories_list" class="overflow-hidden hidden">
+                        <div id="dark_menu_background" class="w-screen h-screen bg-gray-400 opacity-20 absolute top-10 -right-28 "></div>
+                        <div class="flex h-[400px] bg-white absolute top-10 right-0 overflow-y-scroll rounded-b-lg shadow">
+                             <div dir="ltr" class="min-w-[200px] h-full overflow-y-scroll bg-gray-100">
+                                  <ul id="main_categories" dir="rtl">
+                                    <li data-item="1" class="flex items-center hover:bg-white hover:text-primary-color p-4 gap-2">
+                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
+                                        <a class="text-sm" href="#">موبایل</a>
+                                    </li>
+                                    <li data-item="2" class="flex items-center hover:bg-white hover:text-primary-color p-4 gap-2">
+                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
+                                        <a class="text-sm" href="#">لپ تاپ</a>
+                                    </li>
+                                  </ul>
+                             </div>
+                             <div dir="ltr" id="sub_categories" class="bg-white overflow-y-scroll p-4 h-full">
+                                      
+                                <div  data-item="1" class="bg-yellow-500">
+                                      <div dir="rtl" class="flex text-blue-500 gap-2">
+                                        <a class="text-sm" href="">همه محصولات</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                        </svg>
+                                      </div>
+                                      <div dir="rtl" class="flex flex-wrap min-w-[400px] gap-4">
+
+                                         <div class="p-4">
+                                            <div class="flex justify-end gap-2 mb-2 px-2 text-black hover:text-primary-color border-r-2 border-primary-color">
+                                                <a class="text-sm font-semibold " href="">آیفون</a>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                                </svg>
+                                            </div>
+                                            <ul class="flex flex-col items-start leading-7">
+                                                <li>
+                                                    <a class="text-sm hover:text-primary-color" href="">13 آیفون</a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-sm hover:text-primary-color" href="">14 آیفون</a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-sm hover:text-primary-color" href="">15 آیفون</a>
+                                                </li>
+                                            </ul>
+                                         </div>
+                                         
+                                         
+                                      </div>
+                                </div>
+
+                                <div data-item="2" class="bg-rose-500 hidden">
+                                    <div dir="rtl" class="flex text-blue-500 gap-2">
+                                        <a class="text-sm" href="">همه محصولات</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                        </svg>
+                                      </div>
+                                      <div dir="rtl" class="flex flex-wrap min-w-[400px] gap-4">
+
+                                         <div class="p-4">
+                                            <div class="flex justify-end gap-2 mb-2 px-2 text-black hover:text-primary-color border-r-2 border-primary-color">
+                                                <a class="text-sm font-semibold " href="">لپ تاپ</a>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                                </svg>
+                                            </div>
+                                            <ul class="flex flex-col items-start leading-7">
+                                                <li>
+                                                    <a class="text-sm hover:text-primary-color" href="">مک بوک</a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-sm hover:text-primary-color" href="">ایسوس</a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-sm hover:text-primary-color" href="">سامسونگ</a>
+                                                </li>
+                                            </ul>
+                                         </div>
+                                         
+                                         
+                                      </div>
+                                </div>
+
+                             </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="bg-gray-300 w-[1px] h-6"></div>
+                 <div class="flex items-center gap-2">
+                     <div class=" text-gray-400 cursor-pointer relative">
+                        <div class="flex items-center gap-1 after:w-0 after:h-[2px] after:bg-primary-color after:absolute after:-bottom-3 hover:after:w-full hover:after:transition-all  hover:after:duration-150 after:transition-all after:duration-150">
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
+                         </svg>
+                         <p class="text-sm">شگفت انگیزها</p>
+                        </div>
+                     </div>
+                     <div class="cursor-pointer text-gray-400 relative">
+                        <div class="flex items-center gap-1 after:w-0 after:h-[2px] after:bg-primary-color after:absolute after:-bottom-3 hover:after:w-full hover:after:transition-all  hover:after:duration-150 after:transition-all after:duration-150">
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
+                             </svg>
+                            <p class="text-sm">طلای دیجیتال</p>
+                        </div>
+                     </div>
+                     <div class="cursor-pointer text-gray-400 relative">
+                         <div class="flex items-center gap-1 after:w-0 after:h-[2px] after:bg-primary-color after:absolute after:-bottom-3 hover:after:w-full hover:after:transition-all  hover:after:duration-150 after:transition-all after:duration-150">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
+                         </svg>
+                          <p class="text-sm">سوپر مارکت</p>
+                         </div>
+                     </div>
+                 </div>
+                  <div class="bg-gray-300 w-[1px] h-6"></div>
+                  <div class="flex items-center gap-2 text-gray-400 ">
+                       <div class="relative cursor-pointer">
+                            <div class="after:w-0 after:h-[2px] after:bg-primary-color after:absolute after:-bottom-3 hover:after:w-full hover:after:transition-all  hover:after:duration-150 after:transition-all after:duration-150">
+                            <p class="text-sm">سوالی دارید؟</p>
+                            </div>
+                       </div>
+                        <div class="relative cursor-pointer">
+                            <div class="after:w-0 after:h-[2px] after:bg-primary-color after:absolute after:-bottom-3 hover:after:w-full hover:after:transition-all  hover:after:duration-150 after:transition-all after:duration-150">
+                            <p class="text-sm">در دیجی کالا بفروشید</p>
+                        </div>
+                       </div>
+                  </div>
+
+            </div>
+            <div class="w-1/2 flex justify-end items-center px-4 gap-4 relative group">
+                   <div class="flex items-center rounded-4xl bg-orange-100 px-3 py-2 text-orange-500 gap-1 cursor-pointer">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                         </svg>
+                         <p class="text-xs">شهر خود را انتخاب کنید</p>
+                   </div>
+                   <div class="hidden w-auto h-auto bg-gray-800 text-white text-sm absolute -bottom-12 -left-12 px-3 py-2 rounded-lg group-hover:flex">
+                      برای مشاهده سرویس ها شهر خود را انتخاب کنید
+                   </div>
+            </div>
+        </nav>
 
      </header> 
      
