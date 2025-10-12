@@ -41,3 +41,29 @@ main_categories.forEach((item)=>{
    })
 })
 
+///////////////////////////////
+
+
+
+let search = document.getElementById('search')
+let search_box = document.getElementById('search_box')
+let dark_menu_search = document.getElementById('dark_menu_search')
+
+search.addEventListener('click',openSearchBox);
+dark_menu_search.addEventListener('click',closeSearchBox);
+
+function openSearchBox(){
+    search_box.classList.remove('hidden')
+    search_box.classList.add('flex-col')
+    document.body.style.overflow='hidden'
+    dark_menu_search.classList.remove('hidden')
+    dark_menu_search.classList.add('flex')
+}
+
+function closeSearchBox(){
+    search_box.classList.remove('flex-col')
+    search_box.classList.add('hidden')
+    document.body.style.overflow='auto';
+     dark_menu_search.classList.remove('flex')
+    dark_menu_search.classList.add('hidden')
+}
