@@ -82,6 +82,7 @@ function openCityModel(){
     city_modal.classList.remove('hidden')
     city_modal.classList.add('flex')
     document.body.style.overflow='hidden'
+    closeSearchBox()
 }
 
 function closeCityModel(){
