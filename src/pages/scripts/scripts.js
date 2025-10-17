@@ -3,6 +3,7 @@ let categories = document.getElementById('categories')
 let categories_list = document.getElementById('categories_list')
 let dark_menu_background = document.getElementById('dark_menu_background')
 
+
 categories.addEventListener('mouseover',openMenu)
 categories.addEventListener('mouseleave',closeMenu)
 dark_menu_background.addEventListener('mousemove',closeMenu)
@@ -66,4 +67,25 @@ function closeSearchBox(){
     document.body.style.overflow='auto';
      dark_menu_search.classList.remove('flex')
     dark_menu_search.classList.add('hidden')
+}
+
+/////////////////////////
+
+let choose_city = document.getElementById('choose_city')
+let city_modal = document.getElementById('city_modal')
+let closeCityModlaIcon = document.getElementById('closeCityModlaIcon')
+
+choose_city.addEventListener('click',openCityModel);
+closeCityModlaIcon.addEventListener('click',closeCityModel);
+
+function openCityModel(){
+    city_modal.classList.remove('hidden')
+    city_modal.classList.add('flex')
+    document.body.style.overflow='hidden'
+}
+
+function closeCityModel(){
+    city_modal.classList.remove('flex-col')
+    city_modal.classList.add('hidden')
+    document.body.style.overflow='auto';
 }
