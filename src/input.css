@@ -78,6 +78,18 @@
     
     --color-primary-color:#ed1944;
     --color-border-color : border-gray-300;
+
+    --animate-res-button-animation : res-button-animation 0.5s ease-in-out; 
+    @keyframes res-button-animation {
+        0%{
+          width: 0;
+          opacity:1;
+        }
+        100%{
+         width:100%;
+         opacity:0;
+        }
+    }
 }
 
 
