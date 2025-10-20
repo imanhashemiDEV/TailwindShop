@@ -69,6 +69,27 @@ function closeSearchBox(){
     dark_menu_search.classList.add('hidden')
 }
 
+///////////////////////////
+
+let res_search = document.getElementById('res_search')
+let res_search_box = document.getElementById('res_search_box')
+let close_res_search_box = document.getElementById('close_res_search_box')
+
+res_search.addEventListener('click',openResSearchBox);
+close_res_search_box.addEventListener('click',closeResSearchBox);
+
+function openResSearchBox(){
+    res_search_box.classList.remove('hidden')
+    res_search_box.classList.add('flex-col')
+    document.body.style.overflow='hidden'
+}
+
+function closeResSearchBox(){
+    res_search_box.classList.remove('flex-col')
+    res_search_box.classList.add('hidden')
+    document.body.style.overflow='auto';
+}
+
 /////////////////////////
 
 let choose_city = document.getElementById('choose_city')
