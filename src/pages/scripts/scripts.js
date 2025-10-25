@@ -111,3 +111,20 @@ function closeCityModel(){
     city_modal.classList.add('hidden')
     document.body.style.overflow='auto';
 }
+
+
+///////////////////////////////////////////
+
+let footer_show_more_text = document.getElementById('footer_show_more_text')
+let footer_text_hover = document.getElementById('footer_text_hover')
+let footer_text_box = document.getElementById('footer_text_box')
+
+footer_show_more_text.addEventListener('click',toggleFooterText);
+
+function toggleFooterText(){
+
+    footer_text_hover.classList.toggle('hidden');
+    footer_text_box.classList.toggle('h-32');
+    footer_show_more_text.firstElementChild.innerText= footer_text_box.classList.contains('h-32') ? 'مشاهده بیشتر':'بستن'
+
+}

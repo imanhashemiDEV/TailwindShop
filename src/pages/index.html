@@ -1004,7 +1004,9 @@
 
       <div class="flex gap-4">
         <div class="w-2/3 flex flex-col ">
-         <div class="h-32 overflow-hidden">
+         
+         <div id="footer_text_box" class="h-32 overflow-hidden relative">
+            <div id="footer_text_hover" class="w-full h-full bg-gradient-to-b from-transparent from-60% to-white absolute"></div>
             <h2 class="text-xl font-bold text-slate-500">
             دیجی کالا؛ بزرگترین فروشگاه اینترنتی ایران
             </h2>
@@ -1033,8 +1035,8 @@
              </p>
          </div>
       
-          <div class="flex items-center text-blue-500 gap-2 mt-4">
-            <a href="" class="text-sm">نمایش بیشتر</a>
+          <div id="footer_show_more_text" class="flex items-center text-blue-500 gap-2 mt-4">
+            <a class="text-sm cursor-pointer">مشاهده بیشتر</a>
              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
             </svg>
@@ -1058,6 +1060,7 @@
             </div>
         </div>
       </div>
+
     </footer>
 
     <!-- search dark background -->
