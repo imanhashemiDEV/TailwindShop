@@ -93,16 +93,7 @@
 }
 
 
-@utility container{
-    padding-inline:10px;
-    margin-inline:auto;
-    @variant sm{
-        padding-inline:20px;
-    }
-    @variant md{
-        padding-inline:32px;
-    }  
-}
+
 
 
 
