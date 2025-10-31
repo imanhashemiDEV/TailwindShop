@@ -126,3 +126,19 @@ function toggleFooterText(){
     footer_text_box.classList.toggle('h-32');
     footer_show_more_text.firstElementChild.innerText= footer_text_box.classList.contains('h-32') ? 'مشاهده بیشتر':'بستن'
 }
+
+/////////////////////////////Top swiper slider 
+
+
+ var swiper = new Swiper(".topSlider", {
+      slidesPerView: 11,
+      spaceBetween:2,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
