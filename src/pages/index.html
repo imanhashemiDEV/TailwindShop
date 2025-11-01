@@ -705,8 +705,8 @@
 
     <main>
 
-     <div class="p-4 my-4">
-          <div  class="swiper topSlider">
+     <div class="my-4">
+          <div  class="swiper status_slider relative max-w-6xl px-4">
             <div class="swiper-wrapper">
               <div class="swiper-slide  py-4">
                 <a class="flex flex-col items-center justify-baseline gap-2" href="">
@@ -787,8 +787,16 @@
                 </a>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next-status absolute flex items-center justify-center size-10 rounded-full bg-gray-100 z-20 top-1/2 left-4 -translate-y-1/2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                 </svg>
+            </div>
+          <div class="swiper-button-prev-status absolute flex items-center justify-center size-10 rounded-full bg-gray-100 z-20 top-1/2 right-4 -translate-y-1/2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
           </div>
      </div>
 

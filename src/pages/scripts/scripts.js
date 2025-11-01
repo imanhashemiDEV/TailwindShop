@@ -130,7 +130,7 @@ function toggleFooterText(){
 /////////////////////////////Top swiper slider 
 
 
- var swiper = new Swiper(".topSlider", {
+ var swiper = new Swiper(".status_slider", {
       slidesPerView: 11,
       spaceBetween:2,
       pagination: {
@@ -138,7 +138,21 @@ function toggleFooterText(){
         type: "fraction",
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next-status",
+        prevEl: ".swiper-button-prev-status",
       },
+      breakpoints:{
+        640:{
+          slidesPerView: 6,
+          spaceBetween:2  
+        },
+        768:{
+          slidesPerView: 8,
+          spaceBetween:2  
+        },
+        1024:{
+          slidesPerView: 11,
+          spaceBetween:2  
+        }
+      }
     });
