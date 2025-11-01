@@ -127,7 +127,7 @@ function toggleFooterText(){
     footer_show_more_text.firstElementChild.innerText= footer_text_box.classList.contains('h-32') ? 'مشاهده بیشتر':'بستن'
 }
 
-/////////////////////////////Top swiper slider 
+///////////////////////////// Status swiper slider 
 
 
  var swiper = new Swiper(".status_slider", {
@@ -155,4 +155,23 @@ function toggleFooterText(){
           spaceBetween:2  
         }
       }
+    });
+
+
+
+    ///////////////////////////// Main swiper slider 
+
+
+ var swiper = new Swiper(".main_slider", {
+      slidesPerView: 1,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable:true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next-main",
+        prevEl: ".swiper-button-prev-main",
+      },
+      mousewheel: true,
+      keyboard: true,
     });
