@@ -175,3 +175,22 @@ function toggleFooterText(){
       mousewheel: true,
       keyboard: true,
     });
+
+
+  ///////////////////////////// Amazing swiper slider 
+
+
+ var swiper = new Swiper(".amazing_slider", {
+      slidesPerView: 8,
+      spaceBetween:4,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable:true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next-amazing",
+        prevEl: ".swiper-button-prev-amazing",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
