@@ -181,8 +181,8 @@ function toggleFooterText(){
 
 
  var swiper = new Swiper(".amazing_slider", {
-      slidesPerView: 8,
-      spaceBetween:4,
+      slidesPerView: 6,
+      spaceBetween:2,
       pagination: {
         el: ".swiper-pagination",
         clickable:true
