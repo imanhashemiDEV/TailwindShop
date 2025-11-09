@@ -194,3 +194,21 @@ function toggleFooterText(){
       mousewheel: true,
       keyboard: true,
     });
+
+      ///////////////////////////// Category swiper slider 
+
+
+ var swiper = new Swiper(".category_slider", {
+      slidesPerView: 6,
+      spaceBetween:2,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable:true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next-category",
+        prevEl: ".swiper-button-prev-category",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
