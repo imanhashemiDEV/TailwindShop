@@ -212,3 +212,21 @@ function toggleFooterText(){
       mousewheel: true,
       keyboard: true,
     });
+
+  ///////////////////////////// Favoraite swiper slider 
+
+
+ var swiper = new Swiper(".favoraite_slider", {
+      slidesPerView: 6,
+      spaceBetween:2,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable:true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next-favoraite",
+        prevEl: ".swiper-button-prev-favoraite",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
