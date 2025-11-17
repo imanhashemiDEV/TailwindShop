@@ -230,3 +230,22 @@ function toggleFooterText(){
       mousewheel: true,
       keyboard: true,
     });
+
+
+      ///////////////////////////// Most Seles swiper slider 
+
+
+ var swiper = new Swiper(".most_seles_slider", {
+      slidesPerView: 3,
+      spaceBetween:2,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable:true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next-most_seles",
+        prevEl: ".swiper-button-prev-most_seles",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
