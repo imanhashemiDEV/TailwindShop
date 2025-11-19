@@ -131,7 +131,7 @@ function toggleFooterText(){
 
 
  var swiper = new Swiper(".status_slider", {
-      slidesPerView: 11,
+      slidesPerView: 8,
       spaceBetween:2,
       pagination: {
         el: ".swiper-pagination",
@@ -142,17 +142,10 @@ function toggleFooterText(){
         prevEl: ".swiper-button-prev-status",
       },
       breakpoints:{
-        640:{
-          slidesPerView: 6,
-          spaceBetween:2  
-        },
-        768:{
-          slidesPerView: 8,
-          spaceBetween:2  
-        },
-        1024:{
-          slidesPerView: 11,
-          spaceBetween:2  
+        1280:{
+          slidesPerView: 9,
+        },1536:{
+          slidesPerView: 10,
         }
       }
     });
@@ -181,7 +174,7 @@ function toggleFooterText(){
 
 
  var swiper = new Swiper(".amazing_slider", {
-      slidesPerView: 6,
+      slidesPerView: 5,
       spaceBetween:2,
       pagination: {
         el: ".swiper-pagination",
