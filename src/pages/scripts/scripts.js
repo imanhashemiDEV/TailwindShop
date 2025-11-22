@@ -165,8 +165,6 @@ function toggleFooterText(){
         nextEl: ".swiper-button-next-main",
         prevEl: ".swiper-button-prev-main",
       },
-      mousewheel: true,
-      keyboard: true,
     });
 
 
@@ -184,8 +182,6 @@ function toggleFooterText(){
         nextEl: ".swiper-button-next-amazing",
         prevEl: ".swiper-button-prev-amazing",
       },
-      mousewheel: true,
-      keyboard: true,
     });
 
       ///////////////////////////// Category swiper slider 
@@ -202,8 +198,8 @@ function toggleFooterText(){
         nextEl: ".swiper-button-next-category",
         prevEl: ".swiper-button-prev-category",
       },
-      mousewheel: true,
-      keyboard: true,
+      // mousewheel: true,
+      // keyboard: true,
     });
 
   ///////////////////////////// Favoraite swiper slider 
@@ -220,8 +216,8 @@ function toggleFooterText(){
         nextEl: ".swiper-button-next-favoraite",
         prevEl: ".swiper-button-prev-favoraite",
       },
-      mousewheel: true,
-      keyboard: true,
+      // mousewheel: true,
+      // keyboard: true,
     });
 
 
@@ -239,6 +235,6 @@ function toggleFooterText(){
         nextEl: ".swiper-button-next-most_seles",
         prevEl: ".swiper-button-prev-most_seles",
       },
-      mousewheel: true,
-      keyboard: true,
+      // mousewheel: true,
+      // keyboard: true,
     });
