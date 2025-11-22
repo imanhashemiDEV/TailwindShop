@@ -207,7 +207,7 @@ function toggleFooterText(){
 
  var swiper = new Swiper(".favoraite_slider", {
       slidesPerView: 6,
-      spaceBetween:2,
+      spaceBetween:6,
       pagination: {
         el: ".swiper-pagination",
         clickable:true
