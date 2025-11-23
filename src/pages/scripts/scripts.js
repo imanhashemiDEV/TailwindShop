@@ -100,6 +100,7 @@ choose_city.addEventListener('click',openCityModel);
 closeCityModlaIcon.addEventListener('click',closeCityModel);
 
 function openCityModel(){
+  console.log('openCityModel');
     city_modal.classList.remove('hidden')
     city_modal.classList.add('flex')
     document.body.style.overflow='hidden'
@@ -130,7 +131,7 @@ function toggleFooterText(){
 ///////////////////////////// Status swiper slider 
 
 
- var swiper = new Swiper(".status_slider", {
+ var statusSwiper = new Swiper(".status_slider", {
       slidesPerView: 8,
       spaceBetween:2,
       pagination: {
@@ -155,7 +156,7 @@ function toggleFooterText(){
     ///////////////////////////// Main swiper slider 
 
 
- var swiper = new Swiper(".main_slider", {
+ var mainSwiper = new Swiper(".main_slider", {
       slidesPerView: 1,
       pagination: {
         el: ".swiper-pagination",
@@ -171,7 +172,7 @@ function toggleFooterText(){
   ///////////////////////////// Amazing swiper slider 
 
 
- var swiper = new Swiper(".amazing_slider", {
+ var amazingSwiper = new Swiper(".amazing_slider", {
       slidesPerView: 5,
       spaceBetween:2,
       pagination: {
@@ -187,7 +188,7 @@ function toggleFooterText(){
       ///////////////////////////// Category swiper slider 
 
 
- var swiper = new Swiper(".category_slider", {
+ var categorySwiper = new Swiper(".category_slider", {
       slidesPerView: 6,
       spaceBetween:2,
       pagination: {
@@ -205,7 +206,7 @@ function toggleFooterText(){
   ///////////////////////////// Favoraite swiper slider 
 
 
- var swiper = new Swiper(".favoraite_slider", {
+ var favoraiteSwiper = new Swiper(".favoraite_slider", {
       slidesPerView: 6,
       spaceBetween:6,
       pagination: {
@@ -224,7 +225,7 @@ function toggleFooterText(){
       ///////////////////////////// Most Seles swiper slider 
 
 
- var swiper = new Swiper(".most_seles_slider", {
+ var mostSelesSwiper = new Swiper(".most_seles_slider", {
       slidesPerView: 3,
       spaceBetween:2,
       pagination: {
