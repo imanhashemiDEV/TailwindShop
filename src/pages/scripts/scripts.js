@@ -239,3 +239,14 @@ function toggleFooterText(){
       // mousewheel: true,
       // keyboard: true,
     });
+
+
+          ///////////////////////////// Most Seles swiper slider 
+
+
+ var mobileCategorySwiper = new Swiper(".mobile_slider", {
+      slidesPerView: 4,
+      spaceBetween:5,
+      // mousewheel: true,
+      // keyboard: true,
+    });
