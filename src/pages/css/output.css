@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-orange-100: oklch(95.4% 0.038 75.164);
+    --color-orange-300: oklch(83.7% 0.128 66.29);
     --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
@@ -16,6 +17,8 @@
     --color-sky-400: oklch(74.6% 0.16 232.661);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-violet-200: oklch(89.4% 0.057 293.283);
+    --color-violet-400: oklch(70.2% 0.183 293.541);
     --color-rose-400: oklch(71.2% 0.194 13.428);
     --color-rose-500: oklch(64.5% 0.246 16.439);
     --color-slate-200: oklch(92.9% 0.013 255.508);
@@ -429,14 +432,6 @@
     width: calc(var(--spacing) * 24);
     height: calc(var(--spacing) * 24);
   }
-  .size-32 {
-    width: calc(var(--spacing) * 32);
-    height: calc(var(--spacing) * 32);
-  }
-  .size-full {
-    width: 100%;
-    height: 100%;
-  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
@@ -499,6 +494,15 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-1\/3 {
+    width: calc(1/3 * 100%);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2\/3 {
+    width: calc(2/3 * 100%);
   }
   .w-16 {
     width: calc(var(--spacing) * 16);
@@ -744,12 +748,6 @@
   .border-slate-300 {
     border-color: var(--color-slate-300);
   }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
-  }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
-  }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
@@ -785,6 +783,9 @@
   }
   .bg-slate-600 {
     background-color: var(--color-slate-600);
+  }
+  .bg-violet-200 {
+    background-color: var(--color-violet-200);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -973,11 +974,17 @@
   .text-gray-700 {
     color: var(--color-gray-700);
   }
+  .text-gray-800 {
+    color: var(--color-gray-800);
+  }
   .text-gray-900 {
     color: var(--color-gray-900);
   }
   .text-green-700 {
     color: var(--color-green-700);
+  }
+  .text-orange-300 {
+    color: var(--color-orange-300);
   }
   .text-orange-500 {
     color: var(--color-orange-500);
@@ -1009,23 +1016,20 @@
   .text-slate-900 {
     color: var(--color-slate-900);
   }
+  .text-violet-400 {
+    color: var(--color-violet-400);
+  }
   .text-white {
     color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
   }
-  .opacity-15 {
-    opacity: 15%;
-  }
   .opacity-20 {
     opacity: 20%;
   }
   .opacity-40 {
     opacity: 40%;
-  }
-  .opacity-50 {
-    opacity: 50%;
   }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -1107,22 +1111,10 @@
       position: absolute;
     }
   }
-  .after\:-top-0 {
-    &::after {
-      content: var(--tw-content);
-      top: calc(var(--spacing) * -0);
-    }
-  }
   .after\:-top-3 {
     &::after {
       content: var(--tw-content);
       top: calc(var(--spacing) * -3);
-    }
-  }
-  .after\:top-0 {
-    &::after {
-      content: var(--tw-content);
-      top: calc(var(--spacing) * 0);
     }
   }
   .after\:-bottom-1 {
@@ -1137,28 +1129,10 @@
       bottom: calc(var(--spacing) * -3);
     }
   }
-  .after\:-left-0 {
-    &::after {
-      content: var(--tw-content);
-      left: calc(var(--spacing) * -0);
-    }
-  }
-  .after\:-left-6 {
-    &::after {
-      content: var(--tw-content);
-      left: calc(var(--spacing) * -6);
-    }
-  }
   .after\:-left-20 {
     &::after {
       content: var(--tw-content);
       left: calc(var(--spacing) * -20);
-    }
-  }
-  .after\:left-0 {
-    &::after {
-      content: var(--tw-content);
-      left: calc(var(--spacing) * 0);
     }
   }
   .after\:z-50 {
@@ -1185,12 +1159,6 @@
       width: calc(var(--spacing) * 0);
     }
   }
-  .after\:rounded {
-    &::after {
-      content: var(--tw-content);
-      border-radius: 0.25rem;
-    }
-  }
   .after\:rounded-md {
     &::after {
       content: var(--tw-content);
@@ -1209,22 +1177,10 @@
       background-color: var(--color-primary-color);
     }
   }
-  .after\:p-2 {
-    &::after {
-      content: var(--tw-content);
-      padding: calc(var(--spacing) * 2);
-    }
-  }
   .after\:px-2 {
     &::after {
       content: var(--tw-content);
       padding-inline: calc(var(--spacing) * 2);
-    }
-  }
-  .after\:py-2 {
-    &::after {
-      content: var(--tw-content);
-      padding-block: calc(var(--spacing) * 2);
     }
   }
   .after\:py-3 {
@@ -1261,111 +1217,15 @@
       transition-duration: 150ms;
     }
   }
-  .after\:content-\[\'\'\] {
-    &::after {
-      --tw-content: '';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'aaa\'\] {
-    &::after {
-      --tw-content: 'aaa';
-      content: var(--tw-content);
-    }
-  }
   .after\:content-\[\'favorite\'\] {
     &::after {
       --tw-content: 'favorite';
       content: var(--tw-content);
     }
   }
-  .after\:content-\[\'ا\'\] {
-    &::after {
-      --tw-content: 'ا';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'اضا\'\] {
-    &::after {
-      --tw-content: 'اضا';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'اضافه\'\] {
-    &::after {
-      --tw-content: 'اضافه';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'اضافه_به_\'\] {
-    &::after {
-      --tw-content: 'اضافه به ';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'اضافه_به_علاقمندی\'\] {
-    &::after {
-      --tw-content: 'اضافه به علاقمندی';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'اضافه_به_علاقه\'\] {
-    &::after {
-      --tw-content: 'اضافه به علاقه';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'اضافه_به_علاقهمندی\'\] {
-    &::after {
-      --tw-content: 'اضافه به علاقهمندی';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'بب\'\] {
-    &::after {
-      --tw-content: 'بب';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'عا\'\] {
-    &::after {
-      --tw-content: 'عا';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'علا\'\] {
-    &::after {
-      --tw-content: 'علا';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'علاق\'\] {
-    &::after {
-      --tw-content: 'علاق';
-      content: var(--tw-content);
-    }
-  }
   .after\:content-\[\'علاقمندی\'\] {
     &::after {
       --tw-content: 'علاقمندی';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'علاقه\'\] {
-    &::after {
-      --tw-content: 'علاقه';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'یی\'\] {
-    &::after {
-      --tw-content: 'یی';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\'یییی\'\] {
-    &::after {
-      --tw-content: 'یییی';
       content: var(--tw-content);
     }
   }
