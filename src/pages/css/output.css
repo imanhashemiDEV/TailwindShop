@@ -68,7 +68,6 @@
     --default-mono-font-family: var(--font-mono);
     --font-vazir: "vazir";
     --color-primary-color: #ed1944;
-    --color-border-color: border-gray-300;
     --animate-res-button-animation: res-button-animation 0.5s ease-in-out;
   }
 }
@@ -374,6 +373,12 @@
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
   .line-clamp-2 {
     overflow: hidden;
     display: -webkit-box;
@@ -507,12 +512,6 @@
   .w-2\/3 {
     width: calc(2/3 * 100%);
   }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
-  }
-  .w-8 {
-    width: calc(var(--spacing) * 8);
-  }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
@@ -609,6 +608,9 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -678,6 +680,9 @@
   .gap-x-6 {
     column-gap: calc(var(--spacing) * 6);
   }
+  .gap-y-2 {
+    row-gap: calc(var(--spacing) * 2);
+  }
   .gap-y-4 {
     row-gap: calc(var(--spacing) * 4);
   }
@@ -692,9 +697,6 @@
   }
   .overflow-y-scroll {
     overflow-y: scroll;
-  }
-  .rounded {
-    border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -773,9 +775,6 @@
   }
   .border-white {
     border-color: var(--color-white);
-  }
-  .border-l-gray-300 {
-    border-left-color: var(--color-gray-300);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -1086,17 +1085,11 @@
     outline-style: var(--tw-outline-style);
     outline-width: 4px;
   }
-  .outline-offset-1 {
-    outline-offset: 1px;
-  }
   .outline-offset-2 {
     outline-offset: 2px;
   }
   .outline-offset-4 {
     outline-offset: 4px;
-  }
-  .outline-border-color {
-    outline-color: var(--color-border-color);
   }
   .outline-gray-300 {
     outline-color: var(--color-gray-300);
@@ -1106,9 +1099,6 @@
   }
   .outline-sky-400 {
     outline-color: var(--color-sky-400);
-  }
-  .outline-white {
-    outline-color: var(--color-white);
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
