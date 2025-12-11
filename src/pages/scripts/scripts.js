@@ -250,3 +250,22 @@ function toggleFooterText(){
       // mousewheel: true,
       // keyboard: true,
     });
+
+
+          ///////////////////////////// Similar swiper slider 
+
+
+ var mostSelesSwiper = new Swiper(".similar_slider", {
+      slidesPerView: 8,
+      spaceBetween:2,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable:true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next-similar",
+        prevEl: ".swiper-button-prev-similar",
+      },
+      // mousewheel: true,
+      // keyboard: true,
+    });
