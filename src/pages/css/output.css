@@ -273,14 +273,8 @@
   .top-47 {
     top: calc(var(--spacing) * 47);
   }
-  .top-\[200\] {
-    top: 200;
-  }
   .top-\[200px\] {
     top: 200px;
-  }
-  .top-\[500px\] {
-    top: 500px;
   }
   .-right-12 {
     right: calc(var(--spacing) * -12);
@@ -374,9 +368,6 @@
   }
   .mt-14 {
     margin-top: calc(var(--spacing) * 14);
-  }
-  .mt-44 {
-    margin-top: calc(var(--spacing) * 44);
   }
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
@@ -599,11 +590,17 @@
   .w-\[28rem\] {
     width: 28rem;
   }
+  .w-\[30\%\] {
+    width: 30%;
+  }
   .w-\[35\%\] {
     width: 35%;
   }
   .w-\[65\%\] {
     width: 65%;
+  }
+  .w-\[70\%\] {
+    width: 70%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -667,9 +664,6 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .cursor-auto {
-    cursor: auto;
   }
   .cursor-pointer {
     cursor: pointer;
