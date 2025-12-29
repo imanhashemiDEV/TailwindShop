@@ -269,3 +269,21 @@ function toggleFooterText(){
       // mousewheel: true,
       // keyboard: true,
     });
+
+
+    ///////////////////////// intro tabs
+
+    let intro_tabs = document.querySelectorAll('#intro_tabs li')
+
+    intro_tabs.forEach((tab,index)=>{
+      tab.addEventListener('click',()=>{
+
+          intro_tabs.forEach((item)=>{
+            item.classList.remove('text-primary-color');
+            item.classList.remove('after:bg-primary-color');
+          })
+
+          intro_tabs[index].classList.add('text-primary-color')
+          intro_tabs[index].classList.add('after:bg-primary-color')
+      })
+    })

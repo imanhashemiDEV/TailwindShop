@@ -1459,17 +1459,20 @@
         </div>
 
         <!-- Introduction -->
-        <div class="w-[90%] mx-auto">
-          <ul class="flex w-full border-b border-gray-400 py-4 gap-4">
-            <li class="text-sm text-primary-color px-2 font-semibold relative after:absolute after:top-[33px] after:right-0 after:w-full after:h-1 after:rounded-b-md after:bg-primary-color">معرفی</li>
-            <li class="text-sm text-gray-400 px-2 font-semibold">مشخصات</li>
-            <li class="text-sm text-gray-400 px-2 font-semibold">دیدگاه</li>
+        <div class="w-[90%] mx-auto sticky top-[180px] bg-white z-20">
+          <ul id="intro_tabs" class="flex w-full border-b border-gray-400 py-4 gap-4">
+            <li class="text-sm text-gray-400 text-primary-color px-2 font-semibold relative after:absolute after:top-[33px] after:right-0 after:w-full 
+            after:h-1 after:rounded-b-md after:bg-primary-color"><a href="#intro">معرفی</a></li>
+            <li class="text-sm text-gray-400 px-2 font-semibold relative after:absolute after:top-[33px] after:right-0 after:w-full 
+            after:h-1 after:rounded-b-md"><a href="#property">مشخصات</a></li>
+            <li class="text-sm text-gray-400 px-2 font-semibold relative after:absolute after:top-[33px] after:right-0 after:w-full 
+            after:h-1 after:rounded-b-md"><a href="#comments">دیدگاهها</a></li>
           </ul>
         </div>
 
-        <div class="w-[90%] mx-auto flex gap-x-4 mt-6 ">
+        <div class="w-[90%] mx-auto flex gap-x-4 mt-6">
             <div class="w-[80%] ">
-                 <div class="flex flex-col justify-start border-b-4 border-gray-300 py-8">
+                 <div id="intro" class="flex flex-col justify-start border-b-4 border-gray-300 py-8">
                     <h2 class="text-md font-bold w-full relative after:absolute after:top-8 after:right-0 after:w-16 after:h-[2px] after:bg-primary-color">معرفی</h2>
                     <p class="text-sm text-slate-700 mt-4 line-clamp-3 leading-8">سرانجام سامسونگ به انتظارها پایان داد و پرچمدار جدید خود Galaxy S25 Ultra را به بازار معرفی کرد. این پرچم‌دار که پس از S24 Ultra که یکی از موفق‌ترین پرچمدارهای تاریخ گوشی‌های هوشمند است، به بازار آمده و مسئولیت سنگینی دارد. از لحاظ طراحی، S25 Ultraبا فریم تیتانیوم درجه 5 و گوریلا گلس آرمور 2 ساخته شده است که به آن دوام و استحکام فوق‌العاده‌ای بخشیده است. ابعاد دستگاه به اندازه‌ای است که در دست گرفتن آن راحت است و لبه‌های خمیده و وزنی معادل 218 گرم باعث شده است که این گوشی از S24 Ultra خوش‌دست‌تر باشد. این گوشی همچنین با استاندارد IP68 مقاوم در برابر آب و گرد و غبار است، بنابراین می‌توانید بدون نگرانی از آن در شرایط مختلف استفاده کنید. نمایشگر S25 Ultra یک صفحه Dynamic LTPO AMOLED 2X با سایز 6.9 اینچ و رزولوشن بسیار بالا است که تصاویر فوق‌العاده شفاف و رنگ‌های زنده‌ای را به نمایش می‌گذارد. همچنین، این نمایشگر از نرخ تازه‌سازی 120 هرتز پشتیبانی می‌کند که باعث می‌شود همه چیز بسیار روان و سریع به نظر برسد. در دل این گوشی، Snapdragon 8 Elite چیپستی است که سرعت و عملکرد را به سطح جدیدی می‌برد. این گوشی با حافظه داخلی مناسب و حافظه رم گسترده، به شما اجازه می‌دهد بدون هیچ‌گونه تأخیر، از بازی‌ها و برنامه‌های سنگین لذت ببرید. دوربین اصلی 200 مگاپیکسلی این گوشی به همراه لنزهای تله‌فوتو و اولتراواید، تصاویری دقیق و شفاف را ثبت می‌کند. همچنین، امکان فیلم‌برداری 4K با سرعت 120 فریم بر ثانیه یکی از بهترین گوشی‌های هوشمند در زمینه فیلم‌برداری است. در نهایت، باتری 5000 میلی‌آمپر ساعتی و شارژ سریع 45 وات، S25 Ultra را به یک انتخاب ایده‌آل برای کسانی تبدیل می‌کند که به دنبال قدرت، کیفیت و طراحی بی‌نظیر در یک گوشی هوشمند هستند. </p>
                     <div class="flex items-center justify-start gap-x-2 w-full mt-4 cursor-pointer">
@@ -1480,7 +1483,7 @@
                     </div>
                  </div>
 
-                 <div class="flex flex-col justify-start border-b-4 border-gray-300 py-8">
+                 <div id="property" class="flex flex-col justify-start border-b-4 border-gray-300 py-8">
                     <h2 class="text-md font-bold w-full relative after:absolute after:top-8 after:right-0 after:w-16 after:h-[2px] after:bg-primary-color">مشخصات</h2>
                   <div class="flex items-start gap-x-2 mt-8">
                       <div class="flex w-[20%] items-start">
@@ -1541,9 +1544,8 @@
                       </svg>
                     </div>
                  </div>
-
                  
-                 <div class="flex flex-col justify-start border-b-4 border-gray-300 py-8">
+                 <div id="comments" class="flex flex-col justify-start border-b-4 border-gray-300 py-8">
                     <h2 class="text-md font-bold w-full relative after:absolute after:top-8 after:right-0 after:w-16 after:h-[2px] after:bg-primary-color">امتیاز و دیدگاه کاربران</h2>
                   <div class="flex items-start gap-x-6 mt-8">
                       <div class="flex flex-col gap-y-4 w-[20%] items-start">
@@ -1966,7 +1968,8 @@
 
             </div>
             <div class="w-[20%]">
-                  <div class="flex flex-col p-4 items-start justify-start bg-gray-100 rounded-lg border border-gray-300">
+                  <div class="flex flex-col p-4 items-start justify-start bg-gray-100
+                   rounded-lg border border-gray-300 sticky top-[250px]">
                     <div class="flex items-center my-2 gap-x-4">
                         <img class="h-24" src="images/singlepage/08ecd0f8275de90a31ce99a2d3fb4bd155936386_1692456061.webp" alt="">
                         <div class="flex flex-col items-center justify-center gap-2 ">
