@@ -10,7 +10,7 @@
   <body class="font-vazir">
 
     <header class="bg-white shadow sticky top-0 z-30">
-      <div class="w-full h-16">
+      <div class="hidden  lg:flex w-full h-16">
         <img src="images/main_page/top-baner.gif" alt="top-banner" />
       </div>
 
@@ -617,95 +617,48 @@
       </nav>
 
       <!-- responsive header -->
-      <div class="flex-col lg:hidden">
-        <div class="flex justify-between w-full px-2">
-          <div
-            id="res_search"
-            class="relative flex items-center bg-gray-100 px-4 py-3 mr-4 gap-4 grow rounded-md"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6 text-gray-500"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-              />
-            </svg>
-            <div class="text-gray-500 text-sm">جستجو در</div>
-            <div class="absolute right-30 top-4">
-              <img class="h-4" src="images/main_page/digi.svg" alt="" />
-            </div>
-          </div>
+       <div class=" flex flex-col  lg:hidden  px-2 py-4">
+            <div class="flex items-center justify-between w-full px-2">
 
-          <div class="bg-gray-100 p-2 mr-4 rounded-md">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-7 text-gray-900"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
-              />
-            </svg>
-          </div>
-        </div>
-        <div
-          class="w-auto flex text-gray-700 justify-start items-center p-2 gap-4 relative group"
-        >
-          <div class="flex items-center px-3 py-2 gap-1 cursor-pointer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-5"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-              />
-            </svg>
-            <p class="text-sm font-semibold">شهر خود را انتخاب کنید</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-5"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 19.5 8.25 12l7.5-7.5"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
+              <div class="text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+              </div>
+
+              <div class="flex items-center text-gray-400 gap-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
+                      </svg>
+              </div>
+              
+            </div>
+            <div class="mt-3">
+              <ul class="flex items-center justify-start gap-2">
+                <li class="text-sm text-gray-400 underline underline-offset-8">دیجی‌کالا</li>
+                <li class="text-sm text-gray-400">></li>
+                <li class="text-sm text-gray-400 underline underline-offset-8">موبایل</li>
+                <li class="text-sm text-gray-400">></li>
+                <li class="text-sm text-gray-400 underline underline-offset-8">گوشی موبایل</li>
+              </ul>
+            </div>
+       </div>
+       
+        
+      
     </header>
 
     <main>
       
-      <div class="w-[90%] my-8 flex items-center justify-between px-2 mx-auto">
+      <div class="hidden lg:flex w-[90%] my-8  items-center justify-between px-2 mx-auto">
 
         <div>
           <ul class="flex items-center justify-start gap-2">
@@ -727,8 +680,8 @@
       </div>
 
       <!-- product details -->
-       <div class="w-[90%] my-8 flex items-start gap-x-8  px-2 mx-auto">
-         <div class="w-[35%]">
+       <div class="w-[90%] my-8 flex flex-col lg:flex-row items-start gap-x-8  px-2 mx-auto">
+         <div class="w-full lg:w-[35%]">
 
            <div class="flex gap-4">
             <div class="flex flex-col gap-y-4">
@@ -799,7 +752,7 @@
            </div>
 
          </div>
-        <div class="w-[65%]">
+        <div class="w-full lg:w-[65%]">
           <ul class="flex gap-x-4">
             <li class="text-md text-sky-400">سامسونگ</li>
             <li class="text-gray-400">/</li>
@@ -807,7 +760,7 @@
           </ul>
           <h2 class="text-xl mt-2">گوشی موبایل سامسونگ مدل Galaxy S25 FE دو سیم کارت ظرفیت 256 گیگابایت و رم 8 گیگابایت - ویتنام</h2>
           <div class="w-full flex mt-6 gap-x-4">
-              <div class="w-2/3 flex flex-col justify-start">
+              <div class="w-full lg:w-2/3 flex flex-col justify-start">
                  <p class="text-xs text-gray-300">Samsung Galaxy S25 FE Dual SIM Storage 256GB And 8GB Mobile Phone - Vietnam</p>
                  <hr class=" text-gray-300 my-4">
                  <div class="flex justify-start gap-2 ">
@@ -975,7 +928,7 @@
                  </div>
 
               </div>
-              <div class="w-1/3 h-[550px] sticky top-[200px] bg-gray-100 border border-gray-300 rounded-lg p-4">
+              <div class="hidden lg:flex lg:flex-col w-1/3 h-[550px] sticky top-[200px] bg-gray-100 border border-gray-300 rounded-lg p-4">
                   <div class="flex items-center justify-between mt-2">
                      <h3 class="text-md font-bold ">فروشنده</h3>
                      <span class="text-xs text-sky-400">3 فروشنده دیگر</span>
@@ -1067,7 +1020,7 @@
 
        </div>
 
-       <div class="w-[90%] grid grid-cols-5 my-8  px-2 pt-4 py-8 mx-auto border-t border-b-4 border-gray-300">
+       <div class="hidden  w-[90%] lg:grid grid-cols-5 my-8  px-2 pt-4 py-8 mx-auto border-t border-b-4 border-gray-300">
               <div class="flex items-center justify-center gap-x-2">
                 <img src="images/singlepage/icons/express-delivery.svg" alt="">
                 <p class="text-sm  text-gray-300">امکان تحویل اکسپرس</p>
@@ -1090,7 +1043,7 @@
               </div>    
        </div>
 
-       <div class="flex flex-col w-[90%] mx-auto gap-y-4 items-center my-8">
+       <div class="hidden lg:flex flex-col w-[90%] mx-auto gap-y-4 items-center my-8">
            <h2 class="text-md font-bold w-full relative after:absolute after:top-8 after:right-0 after:w-16 after:h-[2px] after:bg-primary-color">فروشندگان این کالا</h2>
            <div class="w-full flex flex-col gap-y-8">
 
