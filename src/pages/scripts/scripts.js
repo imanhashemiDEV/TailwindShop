@@ -294,3 +294,16 @@ function toggleFooterText(){
           intro_tabs[index].classList.add('after:bg-primary-color')
       })
     })
+
+
+        ///////////////////////////// product details swiper slider 
+
+
+ var mainSwiper = new Swiper(".product_detail_slider", {
+      slidesPerView: 1,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable:true
+      },
+    });

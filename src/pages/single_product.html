@@ -680,8 +680,8 @@
       </div>
 
       <!-- product details -->
-       <div class="w-[90%] my-8 flex flex-col lg:flex-row items-start gap-x-8  px-2 mx-auto">
-         <div class="w-full lg:w-[35%]">
+       <div class="w-full lg:w-[90%] my-8 flex flex-col lg:flex-row items-start gap-x-8 mx-auto ">
+         <div class="hidden lg:flex lg:flex-col lg:w-[35%]">
 
            <div class="flex gap-4">
             <div class="flex flex-col gap-y-4">
@@ -752,7 +752,36 @@
            </div>
 
          </div>
-        <div class="w-full lg:w-[65%]">
+
+          <div class="w-full lg:h-[300px] lg:hidden ">
+                <div class="swiper product_detail_slider relative w-full h-full px-4">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                     <div class="w-full flex items-center justify-center">
+                       <img class="h-[200px] w-[200px]" src="images/singlepage/dcfc2c42a6e6a516109c84eba45d672d283dc813_1692456058.webp" alt="">
+                     </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="w-full flex items-center justify-center">
+                       <img class="h-[200px] w-[200px]" src="images/singlepage/dcfc2c42a6e6a516109c84eba45d672d283dc813_1692456058.webp" alt="">
+                     </div>
+                    </div>
+                    <div class="swiper-slide">
+                     <div class="w-full flex items-center justify-center">
+                       <img class="h-[200px] w-[200px]" src="images/singlepage/dcfc2c42a6e6a516109c84eba45d672d283dc813_1692456058.webp" alt="">
+                     </div>
+                    </div>
+                    <div class="swiper-slide">
+                     <div class="w-full flex items-center justify-center">
+                       <img class="h-[200px] w-[200px]" src="images/singlepage/dcfc2c42a6e6a516109c84eba45d672d283dc813_1692456058.webp" alt="">
+                     </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+          </div>
+
+        <div class="w-full lg:w-[65%] mt-4 pt-4 rounded-t-2xl border border-gray-300 lg:border-none px-4">
           <ul class="flex gap-x-4">
             <li class="text-md text-sky-400">سامسونگ</li>
             <li class="text-gray-400">/</li>
@@ -1414,7 +1443,7 @@
         <!-- Introduction -->
         <div class="hidden lg:flex w-[90%] mx-auto sticky top-[180px] bg-white z-20">
           <ul id="intro_tabs" class="flex w-full border-b border-gray-400 py-4 gap-4">
-            <li class="text-sm text-gray-400 text-primary-color px-2 font-semibold relative after:absolute after:top-[33px] after:right-0 after:w-full 
+            <li class="text-sm text-primary-color px-2 font-semibold relative after:absolute after:top-[33px] after:right-0 after:w-full 
             after:h-1 after:rounded-b-md after:bg-primary-color"><a href="#intro">معرفی</a></li>
             <li class="text-sm text-gray-400 px-2 font-semibold relative after:absolute after:top-[33px] after:right-0 after:w-full 
             after:h-1 after:rounded-b-md"><a href="#property">مشخصات</a></li>
